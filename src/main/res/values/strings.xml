@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Petagram</string>
+    <string name="mensaje">Que Novel???</string>
+    <string name="TextoAccion">Esto es una Acción</string>
+    <string-array name="planetas">
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Jupier</item>
+    </string-array>
+    <string name="tituloTarjeta">Android 5.x</string>
+    <string name="descripcion_tarjeta">Aquí debe ir la descipción de la Tarjera y debe incluir Material Design.</string>
+    <string name="title_activity_display_message">My Message</string>
+
+    <string name="Nombre">Carlos Hidalgo</string>
+    <string name="Telefono">9933999547</string>
+    <string name="EMail">mimail@mail.comx</string>
+
+
+    <string name="eNombre"></string>
+    <string name="eFecha"></string>
+    <string name="eTelefono"></string>
+    <string name="eMail"></string>
+    <string name="eDescripcion"></string>
+
+    <string name="pNombre">Nombre</string>
+    <string name="pFecha">Fecha</string>
+    <string name="pTelefono">Telefono</string>
+    <string name="pMail">EMail</string>
+    <string name="pDescripcion">Descripcion</string>
+
+    <string name="textNombreCardView">Hola hola</string>
+    <string name="textTelefonoCardView">9999955555</string>
+
+
+    <string name="imgFotoMascota">FotoMascota</string>
+    <string name="nombremascota">NombreMascota</string>
+    <string name="numlikemascota">NumLikes</string>
+</resources>
