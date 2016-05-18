@@ -3,8 +3,11 @@ package mx.com.logydes.petagram;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -16,6 +19,7 @@ import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -33,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     SwipeRefreshLayout sifMiIndicatorRefresh;
     Adapter adaptador;
     ArrayList<Mascotas_Master> mm;
+    FloatingActionButton fab;
+    ImageView myFav;
 
     private RecyclerView listaMM;
 
@@ -77,6 +83,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "Agregar un nuevo Item", Snackbar.LENGTH_SHORT)
+                        .show();
+            }
+        });
+
+        myFav = (ImageView) findViewById(R.id.myFav);
+        myFav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Agregado a Favorito", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
+        /*
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.setDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+        */
+
 
     }
 
@@ -96,7 +132,6 @@ public class MainActivity extends AppCompatActivity {
         mm.add( new Mascotas_Master( 5,"Luis",R.drawable.mono,11) );
         mm.add( new Mascotas_Master( 6,"Kukis",R.drawable.pupi,9) );
         mm.add( new Mascotas_Master( 7,"Rikis",R.drawable.conejo,8 ) );
-
 
     }
 

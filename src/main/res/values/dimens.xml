@@ -20,4 +20,6 @@
     <dimen name="SeparateImageLikes">110dp</dimen>
     <dimen name="FontSizeStyleMascota">18dp</dimen>
 
+    <dimen name="contentString">260dp</dimen>
+
 </resources>
