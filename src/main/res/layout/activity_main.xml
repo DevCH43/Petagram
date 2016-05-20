@@ -7,7 +7,6 @@
     tools:context="mx.com.logydes.petagram.MainActivity"
     android:background="@color/colorFondo">
 
-
     <RelativeLayout
         android:id="@+id/miRL"
         android:layout_height="match_parent"
