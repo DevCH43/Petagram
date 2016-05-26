@@ -3,6 +3,7 @@
     package="mx.com.logydes.petagram">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -19,11 +20,38 @@
         </activity>
 
         <activity android:name=".DetalleMascota"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Main2Activity">
             <!-- Soporte ver 4.0 o preview -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Main2Activity" />
+
+        </activity>
+
+        <activity android:name=".DetalleMascota2"
+            android:parentActivityName=".Main2Activity">
+            <!-- Soporte ver 4.0 o preview -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+
+        </activity>
+
+        <activity android:name=".ContactActivity"
+            android:parentActivityName=".Main2Activity">
+            <!-- Soporte ver 4.0 o preview -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+
+        </activity>
+
+        <activity android:name=".AboutActivity"
+            android:parentActivityName=".Main2Activity">
+            <!-- Soporte ver 4.0 o preview -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
 
         </activity>
 

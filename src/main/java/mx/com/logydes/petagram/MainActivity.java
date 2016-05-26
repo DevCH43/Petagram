@@ -32,6 +32,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+import mx.com.logydes.petagram.adapter.Mascota_Adapter;
+
 public class MainActivity extends AppCompatActivity {
 
     SwipeRefreshLayout sifMiIndicatorRefresh;

@@ -5,6 +5,7 @@
     <dimen name="lista_height">200dp</dimen>
     <dimen name="card_width">200dp</dimen>
     <dimen name="card_height">300dp</dimen>
+    <dimen name="card_height2">200dp</dimen>
     <dimen name="card_titulo_font_size">20dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="nombre_contacto">33dp</dimen>
@@ -18,8 +19,16 @@
     <dimen name="ButoonLikeWidth">48dp</dimen>
     <dimen name="ButoonLikeHeight">36dp</dimen>
     <dimen name="SeparateImageLikes">110dp</dimen>
+    <dimen name="SeparateImageLikes2">20dp</dimen>
     <dimen name="FontSizeStyleMascota">18dp</dimen>
 
-    <dimen name="contentString">260dp</dimen>
+    <dimen name="contentString">150dp</dimen>
+
+    <dimen name="tamanoIcon">36dp</dimen>
+
+    <dimen name="ButoonLikeWidthMini">24dp</dimen>
+    <dimen name="ButoonLikeHeightMini">18dp</dimen>
+
+    <dimen name="Size100dp">100dp</dimen>
 
 </resources>
