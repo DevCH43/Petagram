@@ -34,8 +34,8 @@ public class ContactActivity extends AppCompatActivity {
     EditText etDescripcion;
     Button btnSendEmail;
 
-    private static final String username = "chidalgor1971@gmail.com";
-    private static final String password = "camhir1971";
+    private static final String username = "xyz@gmail.com";
+    private static final String password = "000000";
 
     private GoogleApiClient client;
 
@@ -87,10 +87,22 @@ public class ContactActivity extends AppCompatActivity {
 
     private Session createSessionObject() {
         Properties properties = new Properties();
+        /* Vía Auth
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.host", "smtp.gmail.com");
         properties.put("mail.smtp.port", "587");
+        */
+        // Vía SSL
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.socketFactory.port", "465");
+        properties.put("mail.smtp.socketFactory.class",
+                "javax.net.ssl.SSLSocketFactory");
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.port", "465");
+
+        Log.i("Datos= ","Username: "+username+ "Password: "+password);
+
 
         return Session.getInstance(properties, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
@@ -161,7 +173,7 @@ public class ContactActivity extends AppCompatActivity {
             }
             return null;
         }
-    }
 
+    }
 
 }
