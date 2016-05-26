@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.com.logydes.petagram"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="mx.com.logydes.petagram.Main2Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mx.com.logydes.petagram.DetalleMascota"
+            android:parentActivityName="mx.com.logydes.petagram.Main2Activity" >
+
+            <!-- Soporte ver 4.0 o preview -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+        <activity
+            android:name="mx.com.logydes.petagram.DetalleMascota2"
+            android:parentActivityName="mx.com.logydes.petagram.Main2Activity" >
+
+            <!-- Soporte ver 4.0 o preview -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+        <activity
+            android:name="mx.com.logydes.petagram.ContactActivity"
+            android:parentActivityName="mx.com.logydes.petagram.Main2Activity" >
+
+            <!-- Soporte ver 4.0 o preview -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+        <activity
+            android:name="mx.com.logydes.petagram.AboutActivity"
+            android:parentActivityName="mx.com.logydes.petagram.Main2Activity" >
+
+            <!-- Soporte ver 4.0 o preview -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+        <activity android:name=".EditUser" />
+        <activity android:name=".ShowUser" />
+        -->
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="mx.com.logydes.petagram.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+    </application>
+
+</manifest>

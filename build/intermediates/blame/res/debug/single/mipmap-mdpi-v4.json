@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/devch/AndroidStudioProjects/Petagram/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_logo.png",
+        "source": "/home/devch/AndroidStudioProjects/Petagram/app/src/main/res/mipmap-mdpi/ic_logo.png"
+    },
+    {
+        "merged": "/home/devch/AndroidStudioProjects/Petagram/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
+        "source": "/home/devch/AndroidStudioProjects/Petagram/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]

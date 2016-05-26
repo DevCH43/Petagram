@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.com.logydes.petagram.DetalleMascota2">
+
+    <include
+        android:id="@+id/miActionBar2"
+        layout="@layout/action_bar2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/miActionBar2"
+        android:paddingTop="60dp"
+        android:layout_marginBottom="@dimen/em_1">
+
+        <!--
+        <ImageView
+            android:id="@+id/imgFotoMascota"
+            android:layout_width="@dimen/ImgMascotaWH"
+            android:layout_height="@dimen/ImgMascotaWH"
+            android:src="@drawable/oso"
+            />
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <mx.com.logydes.petagram.pojo.RoundImage
+                android:id="@+id/imgFotoMascota"
+                android:layout_width="@dimen/contentString"
+                android:layout_height="@dimen/contentString"
+                android:layout_marginTop="@dimen/em_1"
+                app:civ_border="true"
+                app:civ_border_color="#fff"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#ccc"
+                app:civ_shadow_radius="5"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tvNombreMascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/elevationActionBar"
+                android:textSize="@dimen/FontSizeStyleMascota"
+                android:textStyle="bold"
+                android:text="Nombre Mascota"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imgFotoMascota"/>
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sifMiIndicatorRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/miActionBar"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvContactos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lista_height"
+                />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add" />
+
+</android.support.design.widget.CoordinatorLayout>
