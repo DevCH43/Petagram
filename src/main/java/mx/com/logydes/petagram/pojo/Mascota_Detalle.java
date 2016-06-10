@@ -1,4 +1,4 @@
-package mx.com.logydes.petagram;
+package mx.com.logydes.petagram.pojo;
 
 import java.util.Date;
 

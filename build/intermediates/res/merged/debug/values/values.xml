@@ -329,6 +329,7 @@
     <integer name="google_play_services_version">9080000</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="EMail">mimail@mail.comx</string>
+    <string name="IdMascota">0</string>
     <string name="Nombre">Carlos Hidalgo</string>
     <string name="Telefono">9933999547</string>
     <string name="TextoAccion">Esto es una Acción</string>
@@ -394,7 +395,6 @@
     <string name="eNombre">..</string>
     <string name="eTelefono">..</string>
     <string name="hello_blank_fragment">Hola Amigo</string>
-    <string name="idFotoMascota">0</string>
     <string name="imgFotoMascota">FotoMascota</string>
     <string name="mensaje">Que Novel???</string>
     <string name="mnuAbout">Acerca de</string>

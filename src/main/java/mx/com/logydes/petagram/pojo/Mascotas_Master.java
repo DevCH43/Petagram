@@ -1,4 +1,4 @@
-package mx.com.logydes.petagram;
+package mx.com.logydes.petagram.pojo;
 
 /**
  * Created by devch on 14/05/16.
@@ -20,6 +20,10 @@ public class Mascotas_Master {
         this.nombremascota = nombremascota;
         this.fotomascota = fotomascota;
         this.numlikemascota = numlikemascota;
+    }
+
+    public Mascotas_Master() {
+
     }
 
     public int getIdmascota() {

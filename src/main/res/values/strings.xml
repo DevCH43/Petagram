@@ -28,7 +28,7 @@
     <string name="textNombreCardView">Hola hola</string>
     <string name="textTelefonoCardView">9999955555</string>
     <string name="imgFotoMascota">FotoMascota</string>
-    <string name="idFotoMascota">0</string>
+    <string name="IdMascota">0</string>
     <string name="nombremascota">NombreMascota</string>
     <string name="numlikemascota">NumLikes</string>
     <string name="contentDesc">Test</string>

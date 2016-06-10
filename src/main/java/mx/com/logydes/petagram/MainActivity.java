@@ -1,38 +1,28 @@
 package mx.com.logydes.petagram;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
-import android.support.v4.widget.DrawerLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.Adapter;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.Toast;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
 
 import mx.com.logydes.petagram.adapter.Mascota_Adapter;
+import mx.com.logydes.petagram.fragment.PerfilFragment;
+import mx.com.logydes.petagram.fragment.RecycleVIew_Fragment;
+import mx.com.logydes.petagram.pojo.Mascotas_Master;
+import mx.com.logydes.petagram.presentador.ReclyclerViewFragmentPresenter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
     FloatingActionButton fab;
     ImageView myFav;
 
+
     private RecyclerView listaMM;
+    private ReclyclerViewFragmentPresenter RVP;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -59,14 +51,18 @@ public class MainActivity extends AppCompatActivity {
         Toolbar miActionBar = (Toolbar) findViewById(R.id.miActionBar);
         setSupportActionBar(miActionBar);
 
+        agregarFragments();
 
-        listaMM = (RecyclerView) findViewById(R.id.rvContactos);
+        // listaMM = (RecyclerView) findViewById(R.id.rvContactos);
+        // RVP = (ReclyclerViewFragmentPresenter) findViewById(R.id.rvContactos);
 
+/*
         // Para Linear Layout
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
 
         listaMM.setLayoutManager(llm);
+
 
         // Para Grid Layout
         /*
@@ -74,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
         listaMM.setLayoutManager(glm);
         */
 
-        initListContactos();
-        InitAdapter();
+        //initListContactos();
+        //InitAdapter();
 
         sifMiIndicatorRefresh = (SwipeRefreshLayout) findViewById(R.id.sifMiIndicatorRefresh);
         sifMiIndicatorRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -117,6 +113,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    private ArrayList<Fragment> agregarFragments() {
+        ArrayList<Fragment> fragments = new ArrayList<>();
+
+        fragments.add(new RecycleVIew_Fragment());
+        fragments.add(new PerfilFragment());
+        return fragments;
+
+    }
+
 
     public void InitAdapter(){
         Mascota_Adapter mad = new Mascota_Adapter(mm,this);

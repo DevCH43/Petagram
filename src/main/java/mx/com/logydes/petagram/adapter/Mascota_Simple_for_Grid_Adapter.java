@@ -12,9 +12,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import mx.com.logydes.petagram.DetalleMascota2;
-import mx.com.logydes.petagram.Mascotas_Master;
+import mx.com.logydes.petagram.pojo.Mascotas_Master;
 import mx.com.logydes.petagram.R;
-import mx.com.logydes.petagram.pojo.RoundImage;
 
 /**
  * Created by devch on 26/05/16.

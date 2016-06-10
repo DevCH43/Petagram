@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="22"
-    density="xxhdpi"
+    abi="x86"
+    api-level="23"
+    density="420dpi"
     format="7"
-    timestamp="26627351466425" >
+    timestamp="16989368627920"
+    token="5253346825841913509" >
 
     <task
         name="javac"
-        duration="249" />
+        duration="5084" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="111" />
+        duration="551" />
     <task
         name="verifier"
-        duration="9" />
+        duration="46" />
 
     <artifact
         location="/home/devch/AndroidStudioProjects/Petagram/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="26627351466425" >
+    <build timestamp="16989368627920" >
         <artifact
             location="/home/devch/AndroidStudioProjects/Petagram/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />

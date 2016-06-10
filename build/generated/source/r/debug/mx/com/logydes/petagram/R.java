@@ -3166,9 +3166,10 @@ containing a value of this type.
     }
     public static final class string {
         public static final int EMail=0x7f060033;
-        public static final int Nombre=0x7f060034;
-        public static final int Telefono=0x7f060035;
-        public static final int TextoAccion=0x7f060036;
+        public static final int IdMascota=0x7f060034;
+        public static final int Nombre=0x7f060035;
+        public static final int Telefono=0x7f060036;
+        public static final int TextoAccion=0x7f060037;
         public static final int abc_action_bar_home_description=0x7f060000;
         public static final int abc_action_bar_home_description_format=0x7f060001;
         public static final int abc_action_bar_home_subtitle_description_format=0x7f060002;
@@ -3188,10 +3189,10 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f060010;
         public static final int abc_shareactionprovider_share_with_application=0x7f060011;
         public static final int abc_toolbar_collapse_description=0x7f060012;
-        public static final int app_name=0x7f060037;
-        public static final int appbar_scrolling_view_behavior=0x7f060038;
-        public static final int bottom_sheet_behavior=0x7f060039;
-        public static final int character_counter_pattern=0x7f06003a;
+        public static final int app_name=0x7f060038;
+        public static final int appbar_scrolling_view_behavior=0x7f060039;
+        public static final int bottom_sheet_behavior=0x7f06003a;
+        public static final int character_counter_pattern=0x7f06003b;
         public static final int common_google_play_services_api_unavailable_text=0x7f060013;
         public static final int common_google_play_services_enable_button=0x7f060014;
         public static final int common_google_play_services_enable_text=0x7f060015;
@@ -3223,15 +3224,14 @@ containing a value of this type.
         public static final int common_open_on_phone=0x7f06002f;
         public static final int common_signin_button_text=0x7f060030;
         public static final int common_signin_button_text_long=0x7f060031;
-        public static final int contentDesc=0x7f06003b;
-        public static final int descripcion_tarjeta=0x7f06003c;
-        public static final int eDescripcion=0x7f06003d;
-        public static final int eFecha=0x7f06003e;
-        public static final int eMail=0x7f06003f;
-        public static final int eNombre=0x7f060040;
-        public static final int eTelefono=0x7f060041;
-        public static final int hello_blank_fragment=0x7f060042;
-        public static final int idFotoMascota=0x7f060043;
+        public static final int contentDesc=0x7f06003c;
+        public static final int descripcion_tarjeta=0x7f06003d;
+        public static final int eDescripcion=0x7f06003e;
+        public static final int eFecha=0x7f06003f;
+        public static final int eMail=0x7f060040;
+        public static final int eNombre=0x7f060041;
+        public static final int eTelefono=0x7f060042;
+        public static final int hello_blank_fragment=0x7f060043;
         public static final int imgFotoMascota=0x7f060044;
         public static final int mensaje=0x7f060045;
         public static final int mnuAbout=0x7f060046;

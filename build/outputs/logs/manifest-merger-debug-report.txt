@@ -93,13 +93,13 @@ ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManife
 activity#mx.com.logydes.petagram.DetalleMascota
 ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManifest.xml:22:9-29:20
 	android:parentActivityName
-		ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManifest.xml:23:13-56
+		ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManifest.xml:23:13-55
 	android:name
 		ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManifest.xml:22:19-49
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManifest.xml:25:13-27:50
+ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManifest.xml:25:13-27:49
 	android:value
-		ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManifest.xml:27:17-47
+		ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManifest.xml:27:17-46
 	android:name
 		ADDED from /home/devch/AndroidStudioProjects/Petagram/app/src/main/AndroidManifest.xml:26:17-63
 activity#mx.com.logydes.petagram.DetalleMascota2

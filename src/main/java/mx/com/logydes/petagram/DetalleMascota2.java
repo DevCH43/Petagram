@@ -6,7 +6,6 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -16,9 +15,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import mx.com.logydes.petagram.adapter.Mascota_Adapter;
 import mx.com.logydes.petagram.adapter.Mascota_Simple_for_Grid_Adapter;
-import mx.com.logydes.petagram.pojo.RoundImage;
+import mx.com.logydes.petagram.pojo.Mascotas_Master;
 
 public class DetalleMascota2 extends AppCompatActivity {
 
@@ -46,7 +44,7 @@ public class DetalleMascota2 extends AppCompatActivity {
 
         String _tvNombreMascota = params.getString(getResources().getString(R.string.nombremascota));
         int _imgFotoMascota = params.getInt(getResources().getString(R.string.imgFotoMascota));
-        String idFotoMascota = params.getString(getResources().getString(R.string.idFotoMascota));
+        String _IdMascota = params.getString(getResources().getString(R.string.IdMascota));
 
         tvNombreMascota = (TextView) findViewById(R.id.tvNombreMascota);
         imgFotoMascota = (ImageView) findViewById(R.id.imgFotoMascota);

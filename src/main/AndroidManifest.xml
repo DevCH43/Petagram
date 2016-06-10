@@ -20,11 +20,11 @@
         </activity>
 
         <activity android:name=".DetalleMascota"
-            android:parentActivityName=".Main2Activity">
+            android:parentActivityName=".MainActivity">
             <!-- Soporte ver 4.0 o preview -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Main2Activity" />
+                android:value=".MainActivity" />
 
         </activity>
 

@@ -13,7 +13,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -22,6 +21,7 @@ import java.util.ArrayList;
 import mx.com.logydes.petagram.adapter.PageAdapter;
 import mx.com.logydes.petagram.fragment.PerfilFragment;
 import mx.com.logydes.petagram.fragment.RecycleVIew_Fragment;
+import mx.com.logydes.petagram.pojo.Mascotas_Master;
 
 public class Main2Activity extends AppCompatActivity {
 

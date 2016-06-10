@@ -17,6 +17,8 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import mx.com.logydes.petagram.db.ConstructorMascotas;
+
 /**
  * Created by devch on 14/05/16.
  */
@@ -25,6 +27,7 @@ public class DetalleMascota extends AppCompatActivity {
     TextView tvNombreMascota;
     TextView tvNumLikes;
     ImageView imgFotoMascota;
+    int IdMascota;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -45,6 +48,7 @@ public class DetalleMascota extends AppCompatActivity {
         String _tvNombreMascota = params.getString(getResources().getString(R.string.nombremascota));
         int _imgFotoMascota = params.getInt(getResources().getString(R.string.imgFotoMascota));
         String _tvNumLikes = params.getString(getResources().getString(R.string.numlikemascota));
+        int _IdMascota = params.getInt(getResources().getString(R.string.IdMascota));
 
         tvNombreMascota = (TextView) findViewById(R.id.tvNombreMascota);
         imgFotoMascota = (ImageView) findViewById(R.id.imgFotoMascota);
@@ -52,6 +56,11 @@ public class DetalleMascota extends AppCompatActivity {
 
         tvNombreMascota.setText(_tvNombreMascota);
         imgFotoMascota.setImageResource(_imgFotoMascota);
+        /*
+        ConstructorMascotas cm = new ConstructorMascotas(this);
+        String likes = String.valueOf( cm.getLikesByID(_IdMascota) );
+        */
+
         tvNumLikes.setText(_tvNumLikes);
 
     }
