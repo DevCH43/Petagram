@@ -32,7 +32,7 @@ public class ConstructorMascotas {
         */
 
         BaseDatos db = new BaseDatos(context);
-        // insertarMarcotas(db);
+        insertarMarcotas(db);
         return db.obternerTodasLasMascotas();
     }
 
